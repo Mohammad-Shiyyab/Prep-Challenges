@@ -24,9 +24,10 @@ const objLat = (obj) => {
     // write your code here
 
 // -------------------------------------------------------------------------------------------------------
-obj.firstName=obj.firstName.charAt(0).toUpperCast()+obj.firstName.slice(1);
-obj.lastName=obj.lastName.charAt(0).toUpperCast()+obj.lastName.slice(1);
-return `the my name ${obj.firstName} ${obj.lastName} i'm ${obj.age} yo, and i love ${obj.hobby}`;
+const capitalizeFirstLetter = (string) => string[0].toUpperCase() + string.slice(1);
+    const firstName = capitalizeFirstLetter(obj.firstName)
+    const lastName = capitalizeFirstLetter(obj.lastName)
+    return `my name is ${firstName} ${lastName} I am ${obj.age} YO, and I love ${obj.hobby}.`
 };
 // -------------------------------------------------------------------------------------------------------
 //  Challenge 2:
