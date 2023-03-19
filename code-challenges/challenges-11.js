@@ -126,6 +126,7 @@ function fullName(arr) {
 
 function gradesAvg(arr) {
     // write your code here
+    skip
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -200,6 +201,7 @@ function gradesAvg(arr) {
 
 function studentsResult(arr) {
     // write your code here
+    skip
 }
 // -------------------------------------------------------------------------------------------------------
 
