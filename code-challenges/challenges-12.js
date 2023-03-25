@@ -104,6 +104,8 @@ const cvsFiltration = (arr) => {
 
 const vowelsFiltration = (arr) => {
     // write your code here
+     let as= arr.filter(v => !/(a|e|o|i|u)/gi.test(v))
+     return as
 } 
 // -------------------------------------------------------------------------------------------------------
 
