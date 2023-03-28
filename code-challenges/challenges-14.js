@@ -68,21 +68,21 @@ const replaceWords = (str) => {
     // write your code here
     const word = str.split(' ')
 
-    let indexOf_I = words.indexOf("I");
-    let indexOf_am = words.indexOf("am");
-    let indexOf_was = words.indexOf("was");
+    let indexOf_I = word.indexOf("I");
+    let indexOf_am = word.indexOf("am");
+    let indexOf_was = word.indexOf("was");
 
     while (indexOf_I >= 0) {
-        words.splice(indexOf_I, 1, "We");
-        indexOf_I = words.indexOf("I");
+        word.splice(indexOf_I, 1, "We");
+        indexOf_I = word.indexOf("I");
     }
     while (indexOf_am >= 0) {
-        words.splice(indexOf_am, 1, "are");
-        indexOf_am = words.indexOf("am");
+        word.splice(indexOf_am, 1, "are");
+        indexOf_am = word.indexOf("am");
     }
     while (indexOf_was >= 0) {
-        words.splice(indexOf_was, 1, "were");
-        indexOf_was = words.indexOf("was");
+        word.splice(indexOf_was, 1, "were");
+        indexOf_was = word.indexOf("was");
     }
     return word.join(" ");
 
