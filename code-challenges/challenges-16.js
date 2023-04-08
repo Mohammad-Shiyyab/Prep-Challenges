@@ -31,7 +31,7 @@ const reverseString = (string) => {
 
 const detectFace = (arr) => {
     //write your code here ...
-    Face=(str) => str.match(/\^_\^/) !== null ;
+    let Face=(str) => str.match(/\^_\^/) !== null ;
         return arr.filter(Face);
 
 }
