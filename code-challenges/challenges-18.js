@@ -80,6 +80,13 @@ const wordLetters = (str1, str2) => {
 
 const targetIndex = (arr, int) => {
     // write your code here
+
+    for (var s= 0; s < arr.length; s++ ) {
+        if(arr[s] >= int) return s;
+    }
+    return arr.length
+
+    
 }
 // -------------------------------------------------------------------------------------------------------
 
