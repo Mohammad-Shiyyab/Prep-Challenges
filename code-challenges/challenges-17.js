@@ -19,7 +19,7 @@ const recursionPattern = (int1, int2) => {
 
     if(int1 < 0) return [int1]
     
-    return [int1, recursionPattern(int1 - int2,int2) , int1]
+    return [int1, ...recursionPattern(int1 - int2,int2) , int1]
 
 }
 // -------------------------------------------------------------------------------------------------------
@@ -65,9 +65,9 @@ const isPalindrome = (str) => {
     // write your code here
 
     let charactr = str.replace(/\W/g,'').toLowerCase();
-    let varb = charactr.length / 2
+    let varb = charactr.length / 2 ;
     for ( let a = 0; a < varb; a++) {
-        if(charactr[a] !== charactr [ charactr . length - a - 1]){
+        if(charactr[a] !== charactr [ charactr. length - a - 1]){
             return false
         }   
     }
