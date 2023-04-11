@@ -17,10 +17,10 @@
 const recursionPattern = (int1, int2) => {
     // write your code here
 
-    if(int1 < 0) ;
-    return [int1];
+    if(int1 < 0) return [int1]
     
-    return [int1 ,recursionPattern (int1 - int2,int2),int1]
+    return [int1, recursionPattern(int1 - int2,int2) , int1]
+
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -42,7 +42,6 @@ const filterLinks = (str) => {
     // write your code here
 
     for(let match of str.matchAll(/href *= *"(?:http:\/\/)?(?<href>.*)".*?>/gm)){
-        
         return match.groups.href
     }
 }
@@ -65,15 +64,15 @@ const filterLinks = (str) => {
 const isPalindrome = (str) => {
     // write your code here
 
-    
-  let regex = /[\W_]/g
-  let clean = str.toLowerCase() .replace(regex, " ")
-  let reverse = clean.split(" ") .reverse() .join(" ")
-
-  return clean === reverse
-
+    let charactr = str.replace(/\W/g,'').toLowerCase();
+    let varb = charactr.length / 2
+    for ( let a = 0; a < varb; a++) {
+        if(charactr[i] !== charactr [ charactr . length - a - 1]){
+            return false
+        }   
+    }
+    return true
 }
-
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
