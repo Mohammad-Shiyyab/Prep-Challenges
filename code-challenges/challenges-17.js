@@ -67,7 +67,7 @@ const isPalindrome = (str) => {
     let charactr = str.replace(/\W/g,'').toLowerCase();
     let varb = charactr.length / 2
     for ( let a = 0; a < varb; a++) {
-        if(charactr[i] !== charactr [ charactr . length - a - 1]){
+        if(charactr[a] !== charactr [ charactr . length - a - 1]){
             return false
         }   
     }
